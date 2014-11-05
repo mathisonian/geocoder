@@ -1,4 +1,4 @@
-var request = require("request");
+var request = require("browser-request");
 var _ = require('underscore');
 
 exports.geocode = function ( providerOpts, loc, cbk, opts ) {

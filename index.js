@@ -11,7 +11,7 @@
  */
 
 var version = '0.2.1';
-
+require('./providers/google')
 
 /**
  * Geocoder 
@@ -44,7 +44,7 @@ Geocoder.prototype = {
 
     this.provider = name;
     this.providerOpts = opts || {};
-    this.providerObj = require("./providers/"+name);
+    this.providerObj = require('./providers/google');
 
   },
 
